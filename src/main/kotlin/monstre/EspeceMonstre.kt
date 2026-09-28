@@ -1,5 +1,6 @@
 package org.example.monstre
 
+import org.example.dresseur.Entraineur
 import java.io.File
 
 
