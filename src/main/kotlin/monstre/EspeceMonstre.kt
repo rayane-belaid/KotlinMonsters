@@ -1,6 +1,5 @@
 package org.example.monstre
 
-import org.example.dresseur.Entraineur
 import java.io.File
 
 
@@ -28,7 +27,7 @@ import java.io.File
  *
  * @property description description générale de l'espèce du monstre.
  * @property particularites particularités propres à l'espèce du monstre.
- * @property caractères caractéristiques ou traits particuliers de l'espèce.
+ * @property caracteres caractéristiques ou traits particuliers de l'espèce.
  */
 
 
@@ -50,7 +49,7 @@ class EspeceMonstre(
     val modPv: Double,
     val description: String = "",
     val particularites: String = "",
-    val caractères: String = "",
+    val caracteres: String = "",
     ) {
     /**
      * Affiche la représentation artistique ASCII du monstre.
