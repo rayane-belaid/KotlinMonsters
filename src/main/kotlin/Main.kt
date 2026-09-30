@@ -1,6 +1,8 @@
 package org.example
 
 import org.example.dresseur.Entraineur
+import org.example.item.Badge
+import org.example.item.MonsterKube
 import org.example.monde.Zone
 import org.example.monstre.EspeceMonstre
 import org.example.monstre.IndividuMonstre
@@ -17,6 +19,7 @@ var espece_Galum = EspeceMonstre(13, "Galum", "Minéral", 12, 15, 6, 8, 12, 55, 
 //Zone
 var route1 = Zone(1,"montagne", 1,mutableListOf(espece_Springleaf,espece_Aquamy,espece_Bugsyface), zoneSuivante = null, zonePrecedente = null)
 var route2 = Zone(2,"mer", 1,mutableListOf(espece_Flamkip,espece_Galum,espece_Laoumi), zoneSuivante = null, zonePrecedente = null)
+var test = MonsterKube(1,"springleaf","fort et courageux",100.0)
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
@@ -33,8 +36,11 @@ fun main() {
     println(monstre1.pv) // doit afficher pvMax
     println(monstre3.attaquer(monstre1))
     println(monstre3.renommer())
-    println(monstre3.nom)*/
+    println(monstre3.nom)
     println(monstre3.afficheDetail())
+    var badgePierre = Badge(1,"Badge roche","Badge gagné losque le joueur atteint l'arène de pierre")
+    println(badgePierre)*/
+    println(test.utiliser(monstre1))
 }
 
 

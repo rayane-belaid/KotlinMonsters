@@ -1,4 +1,4 @@
 package org.example.item
 
-class Item {
+open class Item (val id: Int,var nom: String, var description: String){
 }
